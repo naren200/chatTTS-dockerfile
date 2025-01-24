@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  chatts:
+    image: naren200/chatts-dockerfile:v1
+    container_name: chatts
+    volumes:
+      - ./:/dir/
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    runtime: nvidia  # Enable GPU support
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
