@@ -1,4 +1,4 @@
-# ChatTTS Docker with GPU Support
+# Simple easy-to-use ChatTTS Dockerfile with GPU Support
 
 This repository provides a Dockerized setup for running [ChatTTS](https://github.com/2noise/ChatTTS), a text-to-speech model designed for dialogue applications, with GPU support. The setup is optimized for ease of use and performance.
 
@@ -95,7 +95,13 @@ If you want to build the Docker image from scratch or modify the setup:
 - The `inputs_en` string in `talk.py` supports special tags like `[uv_break]` for pauses and `[laugh]` for laughter. Refer to the [ChatTTS documentation](https://github.com/2noise/ChatTTS) for more details.
 - If you encounter issues with torchaudio, try switching between the two `torchaudio.save` lines in `talk.py`.
 
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=naren200/chatTTS-dockerfile&type=Date)](https://star-history.com/#naren200/chatTTS-dockerfile&Date)
